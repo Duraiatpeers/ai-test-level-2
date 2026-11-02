@@ -1,0 +1,6 @@
+fastapi==0.115.*
+uvicorn[standard]==0.32.*
+gunicorn==23.*
+openai>=1.50,<2
+numpy>=1.26
+pyyaml>=6

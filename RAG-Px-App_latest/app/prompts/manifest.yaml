@@ -1,0 +1,20 @@
+# Prompt versions served by this app. Learners select one per request using the
+# "prompt_version" field sent to /ask. The default version is v1.
+versions:
+  v1:
+    file: system_v1.txt
+    parent: null
+    change_note: "First production prompt (baseline)."
+  v2:
+    file: system_v2.txt
+    parent: v1
+    change_note: >-
+      Informal-wording guidance added. Grounding relaxed: allows general
+      knowledge when the documents do not cover the question.
+  v2_1:
+    file: system_v2_1.txt
+    parent: v2
+    change_note: >-
+      Restores the grounding and missing-evidence rules; keeps the
+      informal-wording line.
+default: v1
